@@ -9,7 +9,7 @@ import {
   MoreVertical,
   Plus
 } from 'lucide-react';
-import { searchMusic } from '../services/api';
+import { apiService } from '../services/api';
 import { usePlayerStore } from '../store/usePlayerStore';
 import { Track, Source } from '../types';
 import { cn } from '../utils/cn';
