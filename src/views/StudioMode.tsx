@@ -12,9 +12,9 @@ import {
   Disc,
   ArrowRight
 } from 'lucide-react';
-import { cn } from '../../utils/cn';
-import { GlassCard } from '../ui/GlassCard';
-import { NeonButton } from '../ui/NeonButton';
+import { cn } from '../utils/cn';
+import { GlassCard } from '../components/ui/GlassCard';
+import { NeonButton } from '../components/ui/NeonButton';
 
 /**
  * StudioMode: Audio Mastering Suite

@@ -41,7 +41,7 @@ const SearchView: React.FC = () => {
       // If 'all' is selected, we'd ideally fetch from multiple or have a combined endpoint
       // For this implementation, we'll fetch from the selected source or default to youtube for 'all'
       const activeSource = selectedSource === 'all' ? 'youtube' : selectedSource;
-      const data = await searchMusic(searchQuery, activeSource as Source);
+      const data = await apiService.search(searchQuery, activeSource as Source);
       setResults(data);
     } catch (error) {
       console.error("Search failed:", error);

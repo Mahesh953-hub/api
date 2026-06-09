@@ -7,6 +7,8 @@ import { usePlayerStore } from '../store/usePlayerStore';
  * Handles multi-source playback, gapless transitions, and buffer management.
  */
 class UnifiedAudioEngine {
+  public getCurrentTime(): number { return this.activePlayer?.currentTime || 0; }
+  public getIsPlaying(): boolean { return this.activePlayer ? !this.activePlayer.paused : false; }
   private activePlayer: HTMLAudioElement | any = null; // Can be extended for YT/Spotify SDKs
   private secondaryPlayer: HTMLAudioElement | null = null; // For crossfading/pre-fetching
   private crossfadeDuration: number = 2000; // 2 seconds

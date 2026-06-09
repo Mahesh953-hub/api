@@ -12,8 +12,8 @@ import {
   Share2,
   ListMusic
 } from 'lucide-react';
-import { usePlayerStore } from '../store/usePlayerStore';
-import { cn } from '../utils/cn';
+import { usePlayerStore } from '../../store/usePlayerStore';
+import { cn } from '../../utils/cn';
 
 const MobilePlayer: React.FC = () => {
   const { currentTrack, isPlaying, togglePlay } = usePlayerStore();

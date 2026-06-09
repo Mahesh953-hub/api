@@ -40,7 +40,7 @@ export const apiService = {
    * Resolves a track ID to a direct audio stream URL.
    */
   async getStreamUrl(id: string, source: Source): Promise<string | null> {
-    if (source === 'saavn') {
+    if (source === 'jiosaavn') {
       // Saavn URLs are usually in the result or need proxying
       // If we only have the ID, we'd need a specific saavn/details endpoint
       return null; 
